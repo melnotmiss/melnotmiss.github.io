@@ -1,0 +1,331 @@
+*{
+font-family: "Rubik", sans-serif;
+font-optical-sizing: auto;}
+
+
+/*Configuracion del estilo de la barra de navegacion de la pagina*/
+.navegacion{
+background-color: #219ebc;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+position: sticky;
+top: 0;
+z-index: 999;
+}
+
+.navegacion__container{
+display: flex;
+justify-content: space-between;
+height: 100px;
+z-index: 1;
+width: 100%;
+max-width: 1300px;
+margin: 0 auto;
+padding: 0 50px;
+
+}
+
+#navegacion__logo{
+-webkit-text-fill-color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+cursor: pointer;
+text-decoration: none;
+font-size: 1.2rem;
+
+}
+
+.fa_gem{
+margin-right: 0.5rem;
+}
+
+.navegacion__menu{
+display: flex;
+align-items: center;
+list-style: none;
+text-align: center;
+}
+
+navegacion__item a{
+height: 30px;
+}
+
+.navegacion__links{
+color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+}
+
+
+@media screen and (max-width: 960px){
+.navegacion__container{
+display: flex;
+justify-content: space-between;
+height: 50px;
+z-index: 1;
+width: 100%;
+max-width: 1300px;
+padding: 0;
+}
+
+.navegacion__menu{
+display: grid;
+grid-template-columns: auto;
+margin: 0;
+width: 100%;
+position: absolute;
+top: -1000px;
+opacity: 0;
+transition: all 0.5s ease;
+height: 50vh;
+z-index: -1;
+background: #219ebc;
+}
+
+.navegacion__menu.active{
+background: #219ebc;
+top:100%;
+opacity: 1;
+transition: all 0.5s ease;
+z-index: 99;
+height: 50vh;
+font-size: 14px;
+
+}
+
+#navegacion__logo{
+padding-left: 30px;
+}
+
+.navegacion__toggle .bar{
+width: 20px;
+height: 3px;
+margin: 5px auto;
+transition: all 0.3s ease-in-out;
+background: #ffffff;
+}
+
+.navegacion__links{
+text-align: center;
+padding: 1.5rem;
+width: 100%;
+display: table;
+}
+
+#mobile-menu {
+position: absolute;
+top: 20%;
+right: 5%;
+transform: translate(5%, 20%);
+}
+
+.navegacion__toggle .bar{
+display: block;
+cursor: pointer;
+
+}
+
+#mobile-menu.is_active .bar:nth-child(2){
+opacity: 0;
+}
+
+#mobile-menu.is_active .bar:nth-child(1){
+transform: translate(8px) rotate(45deg);
+}
+
+#mobile-menu.is_active .bar:nth-child(3){
+transform: translate(-8px) rotate(-45deg);
+}
+
+}
+
+
+/*Configuracion de las secciones*/
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+display: flex;
+flex-direction: column;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.section {
+width: 1900px; 
+height: 800px;
+padding: 20px;
+text-align: left; 
+margin-bottom: 20px;
+}
+
+.text-left {
+text-align: left;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
+
+.col-md-6 {
+flex: 0 0 50%;
+max-width: 50%;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.flex-item {
+margin-bottom: 20px;
+}
+
+.flex-item img {
+width: 100%;
+height: auto;
+display:block;
+}
+
+
+
+#section1 {
+background: url('Imagenes/pixelcut-export.jpeg') no-repeat center center;
+background-size: cover;
+color: white;
+align-items: center;
+padding: 10px;
+text-align: center; 
+color: #333;
+}
+
+#section2 {
+background-color: #219dbca5;
+color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+
+}
+
+#section3 {
+background-color: #219dbca5;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 449px;
+}
+
+#carouselFotos {
+width: 1900px;
+height: 449px;
+}
+
+/*Configuracion de icono de modo oscuro*/
+i{
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Configuracion del boton de requisitos*/
+.button-container {
+text-align: left;
+align-self: flex-end;
+width: 100%;
+}
+
+.btn-primary:hover {
+background-color: darkblue;
+}
+.modal-list {
+color: rgb(29, 29, 29);
+text-align: left;
+}
+
+.text-center {
+text-align: center;
+margin-top: 20px;
+}
+
+
+/*Carousel*/
+.carousel-inner img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+/*Configuracion de estilo de footer*/
+footer {
+    background-color: #219ebc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+/*Configuracion para video y location*/
+iframe {
+width: 100%;
+height: 600px;
+border: none;
+}
+
+/*Configuracion basica del main*/
+main {
+margin-top: 60px;
+padding: 30px;
+
+}
+/*Parte de la pagina de contacto*/
+.section4{
+background-image: url('Imagenes/fairhope.jpg'); 
+background-size: cover;
+width: 100%;
+height: 100%;
+background-position: center;
+background-attachment: fixed; 
+margin: 0;
+padding: 140px;
+}
+.contact-form {
+padding: 0 0;
+}
+
+.card {
+width: 1000px;  
+
+margin: 100px auto;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+    <!--Metadatos para mejorar la busqueda-->
+    <meta name="description" content="Discover Sailing Pro, your expert sailing coach. We offer personalized classes and training programs for all levels.">
+    <meta name="keywords" content="sailing, sailing coach, sailing classes, sailing training, Quest Sailing Pro">
+
+    <!--Importar los estilos-->
+    <link rel="stylesheet" href="estilo.css"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="icon" type="image/x-icon" href="Imagenes/icon.png">
+
+    <!--Importar fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+</head>
+<body>
+    <!--Configuracion de la barra de navegacion-->
+    <nav class="navegacion">
+        <div class="navegacion__container">
+            <a href="." id="navegacion__logo"> <span class="iconos-google material-symbols-outlined">sailing</span>Sailing Pro</a>
+            <div class="navegacion__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navegacion__menu">
+                <li class="navegacion__item">
+                    <a href="." class="navegacion__links">Home</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="/enlaces_interes.html" class="navegacion__links">About Us</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="/novedades.html" class="navegacion__links">News</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="/contactos.html" class="navegacion__links">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="news-section">
+            <h2 class="text-center mb-4">Latest Sailing News</h2>
+            <div class="news-article">
+                <h3>Top End Sports - List of Sailing Sports</h3>
+                <iframe src="https://www.topendsports.com/sport/list/sailing.htm"></iframe>
+            </div>
+            <div class="news-article">
+                <h3>Live Sail Die - 10 Reasons Sailing is the Best Sport</h3>
+                <iframe src="https://www.livesaildie.com/10-reasons-sailing-is-the-best-sport/"></iframe>
+            </div>
+            <div class="news-article">
+                <h3>PACW - Is Sailing the Best Sport in the World?</h3>
+                <iframe src="https://www.pacw.org/is-sailing-the-best-sport-in-the-world"></iframe>
+            </div>
+            <div class="news-article">
+                <h3>Sail Universe - Sailing is a Great Sport</h3>
+                <iframe src="https://sailuniverse.com/2024/04/15/sailing-is-a-great-sport/"></iframe>
+            </div>
+            <div class="news-article">
+                <h3>US Sailing - Sailing is a Lifelong Sport</h3>
+                <iframe src="https://www.ussailing.org/news/sailing-is-a-lifelong-sport/"></iframe>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer>
+    <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+
+    <p>Contact us: fakesailingpro@gmail.com | Phone: (123) 456-7890</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i> @sailingpro
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i> @sailingpro
+        </a>
+    </div>
+</footer>
+
+<!--Java Script-->
+<script src="app.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
